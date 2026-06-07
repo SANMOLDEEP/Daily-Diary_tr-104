@@ -1,0 +1,290 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Daily Diary Training 104 | Anmoldeep Singh</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: "Segoe UI", sans-serif;
+    background: linear-gradient(135deg,#eef4ff,#dbeafe);
+    min-height:100vh;
+    color:#1e293b;
+}
+
+/* HEADER */
+
+.header{
+    background:linear-gradient(135deg,#0f172a,#1e40af);
+    color:white;
+    padding:30px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.15);
+}
+
+.header-content{
+    max-width:1200px;
+    margin:auto;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:30px;
+}
+
+.logo-container{
+    width:160px;
+    height:160px;
+    background:white;
+    border-radius:20px;
+    padding:10px;
+    flex-shrink:0;
+    box-shadow:0 6px 20px rgba(0,0,0,0.2);
+}
+
+.logo-container img{
+    width:100%;
+    height:100%;
+    object-fit:contain;
+}
+
+.header-text{
+    text-align:left;
+}
+
+.header-text h1{
+    font-size:2.4rem;
+    margin-bottom:10px;
+}
+
+.header-text h2{
+    font-size:1.4rem;
+    font-weight:500;
+    opacity:0.95;
+}
+
+.header-text p{
+    margin-top:8px;
+    opacity:0.9;
+}
+
+/* PROFILE CARD */
+
+.student-info{
+    max-width:1000px;
+    margin:30px auto;
+    padding:25px;
+    background:rgba(255,255,255,0.7);
+    backdrop-filter:blur(10px);
+    border-radius:20px;
+    box-shadow:0 8px 25px rgba(0,0,0,0.08);
+}
+
+.student-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:15px;
+}
+
+.info-box{
+    background:white;
+    padding:15px;
+    border-radius:12px;
+    border-left:5px solid #2563eb;
+}
+
+.info-box strong{
+    color:#1e40af;
+}
+
+/* SECTION */
+
+.container{
+    max-width:1200px;
+    margin:auto;
+    padding:20px;
+}
+
+.section-title{
+    text-align:center;
+    font-size:2rem;
+    color:#1e40af;
+    margin-bottom:25px;
+}
+
+/* WEEK BUTTONS */
+
+.weeks-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(120px,1fr));
+    gap:12px;
+}
+
+.week-card{
+    background:white;
+    border-radius:12px;
+    padding:12px 8px;
+    text-align:center;
+    box-shadow:0 3px 10px rgba(0,0,0,0.08);
+    transition:all 0.25s ease;
+}
+
+.week-card:hover{
+    transform:translateY(-3px);
+    box-shadow:0 8px 18px rgba(37,99,235,0.15);
+}
+
+.week-card h3{
+    font-size:14px;
+    margin-bottom:8px;
+    color:#1e40af;
+}
+
+.week-card a{
+    display:inline-block;
+    text-decoration:none;
+    padding:6px 12px;
+    font-size:12px;
+    font-weight:600;
+    background:linear-gradient(135deg,#2563eb,#1d4ed8);
+    color:white;
+    border-radius:6px;
+}
+
+.week-card a:hover{
+    transform:scale(1.05);
+}
+
+/* FOOTER */
+
+.footer{
+    margin-top:50px;
+    background:#0f172a;
+    color:white;
+    text-align:center;
+    padding:20px;
+    font-size:15px;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+.header-content{
+    flex-direction:column;
+    text-align:center;
+}
+
+.header-text{
+    text-align:center;
+}
+
+.logo-container{
+    width:130px;
+    height:130px;
+}
+
+.header-text h1{
+    font-size:1.8rem;
+}
+
+.header-text h2{
+    font-size:1.1rem;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<header class="header">
+
+<div class="header-content">
+
+<div class="logo-container">
+<img src="logo.png" alt="GNDEC Logo">
+</div>
+
+<div class="header-text">
+<h1>DAILY DIARY TRAINING 104</h1>
+<h2>Guru Nanak Dev Engineering College, Ludhiana</h2>
+<p>Industrial Training Weekly Diary Repository</p>
+</div>
+
+</div>
+
+</header>
+
+<section class="student-info">
+
+<div class="student-grid">
+
+<div class="info-box">
+<strong>Name</strong><br>
+ANMOLDEEP SINGH
+</div>
+
+<div class="info-box">
+<strong>URN</strong><br>
+2203402
+</div>
+
+<div class="info-box">
+<strong>CRN</strong><br>
+22015015
+</div>
+
+
+
+</div>
+
+</section>
+
+<div class="container">
+
+<h2 class="section-title">Weekly Diary Reports</h2>
+
+<div class="weeks-grid">
+
+<div class="week-card"><h3>Week 1</h3><a href="Weekly Diary1.pdf" target="_blank">Open PDF</a></div>
+<div class="week-card"><h3>Week 2</h3><a href="Weekly Diary2.pdf" target="_blank">Open PDF</a></div>
+<div class="week-card"><h3>Week 3</h3><a href="Weekly Diary3.pdf" target="_blank">Open PDF</a></div>
+<div class="week-card"><h3>Week 4</h3><a href="Weekly Diary4.pdf" target="_blank">Open PDF</a></div>
+<div class="week-card"><h3>Week 5</h3><a href="Weekly Diary5.pdf" target="_blank">Open PDF</a></div>
+<div class="week-card"><h3>Week 6</h3><a href="Weekly Diary6.pdf" target="_blank">Open PDF</a></div>
+<div class="week-card"><h3>Week 7</h3><a href="Weekly Diary7.pdf" target="_blank">Open PDF</a></div>
+<div class="week-card"><h3>Week 8</h3><a href="Weekly Diary8.pdf" target="_blank">Open PDF</a></div>
+<div class="week-card"><h3>Week 9</h3><a href="Weekly Diary9.pdf" target="_blank">Open PDF</a></div>
+<div class="week-card"><h3>Week 10</h3><a href="Weekly Diary10.pdf" target="_blank">Open PDF</a></div>
+<div class="week-card"><h3>Week 11</h3><a href="Weekly Diary11.pdf" target="_blank">Open PDF</a></div>
+<div class="week-card"><h3>Week 12</h3><a href="Weekly Diary12.pdf" target="_blank">Open PDF</a></div>
+<div class="week-card"><h3>Week 13</h3><a href="Weekly Diary13.pdf" target="_blank">Open PDF</a></div>
+<div class="week-card"><h3>Week 14</h3><a href="Weekly Diary14.pdf" target="_blank">Open PDF</a></div>
+<div class="week-card"><h3>Week 15</h3><a href="Weekly Diary15.pdf" target="_blank">Open PDF</a></div>
+<div class="week-card"><h3>Week 16</h3><a href="Weekly Diary16.pdf" target="_blank">Open PDF</a></div>
+<div class="week-card"><h3>Week 17</h3><a href="Weekly Diary17.pdf" target="_blank">Open PDF</a></div>
+<div class="week-card"><h3>Week 18</h3><a href="Weekly Diary18.pdf" target="_blank">Open PDF</a></div>
+<div class="week-card"><h3>Week 19</h3><a href="Weekly Diary19.pdf" target="_blank">Open PDF</a></div>
+<div class="week-card"><h3>Week 20</h3><a href="Weekly Diary20.pdf" target="_blank">Open PDF</a></div>
+
+</div>
+
+</div>
+
+<footer class="footer">
+Daily Diary Training 104 | ANMOLDEEP SINGH | URN 2203402
+</footer>
+
+</body>
+</html>
+```
